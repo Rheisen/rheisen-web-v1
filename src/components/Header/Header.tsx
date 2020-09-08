@@ -6,10 +6,10 @@ import styles from './header.module.scss';
 
 const useNavigationDisplay = (initialVisibility: boolean) => {
   const [isNavigationVisible, setNavigationVisible] = useState(initialVisibility);
-  const ref = useRef(null);
+  const ref = useRef<HTMLDivElement>(null);
 
   const handleClick = (event: MouseEvent) => {
-    if(ref.current && !ref.current.contains(event.target)) {
+    if(ref.current && !ref.current.contains(event.target as Node)) {
       setNavigationVisible(false);
     }
   }
