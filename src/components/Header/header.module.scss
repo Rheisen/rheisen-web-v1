@@ -1,4 +1,5 @@
 @import 'styles/utils/colors';
+@import 'styles/utils/breakpoints';
 @import 'styles/utils/transitions';
 
 .headerWrapper {
@@ -76,6 +77,14 @@
         border-bottom-left-radius: .2rem;
         text-align: left;
 
+        @include breakpoint('mobile', 'phablet') {
+            position: fixed;
+            left: 0;
+            width: 100%;
+            height: calc(100vh - 5rem);
+            justify-content: center;
+        }
+
         a {
             box-sizing: border-box;
             display: flex;
@@ -83,12 +92,18 @@
             align-items: center;
             width: 100%;
             padding: 1rem 0 1rem 2rem;
+            outline: none;
             font-family: 'Lato';
             font-size: 1.1rem;
             font-weight: 400;
             letter-spacing: .25px;
             text-decoration: none;
             color: color('primary-tint');
+
+            @include breakpoint('mobile', 'phablet') {
+                font-size: 1.3rem;
+                padding: 2rem 2rem 2rem 3rem;
+            }
 
             &:hover {
                 span {
@@ -104,6 +119,11 @@
                 @include ease-in-out(.2s);
                 padding-top: .2rem;
                 opacity: .7;
+
+                @include breakpoint('mobile', 'phablet') {
+                    padding-top: .3rem;
+                    margin-left: auto;
+                }
             }
 
             .linkIcon {
