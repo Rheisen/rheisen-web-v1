@@ -67,13 +67,11 @@
         box-sizing: border-box;
         position: absolute;
         top: 5rem;
-        right: calc(3rem - 28px);
         right: 2.25rem;
         display: flex;
         flex-direction: column;
         width: 14rem;
         background-color: color('primary-accent', 'lighten', 5);
-        // background-color: color('off-white');
         border-bottom-right-radius: .2rem;
         border-bottom-left-radius: .2rem;
         text-align: left;

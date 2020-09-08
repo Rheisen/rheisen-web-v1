@@ -1,26 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Home, Folder, PenTool, Camera, FileText, Mail } from 'react-feather';
 
 import styles from './header.module.scss';
 
+const useNavigationDisplay = (initialVisibility: boolean) => {
+  const [isNavigationVisible, setNavigationVisible] = useState(initialVisibility);
+  const ref = useRef(null);
+
+  const handleClick = (event: MouseEvent) => {
+    if(ref.current && !ref.current.contains(event.target)) {
+      setNavigationVisible(false);
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('click', handleClick, true);
+    return () => {
+      document.removeEventListener('click', handleClick, true);
+    };
+  });
+
+  return { ref, isNavigationVisible, setNavigationVisible };
+}
+
 export const Header: React.FC = () => {
-  const [displayNav, setDisplayNav] = useState(false);
+  const { ref, isNavigationVisible, setNavigationVisible } = useNavigationDisplay(false);
 
   return (
     <React.Fragment>
-      <header className={styles.headerWrapper}>
+      <header className={styles.headerWrapper} ref={ref}>
         <section className={styles.headerContainer}>
           <Link to='/' className={styles.homeLink}>
             Rheisen X Dennis
           </Link>
-          { displayNav ? (
+          { isNavigationVisible ? (
             <React.Fragment>
               <X
                 className={styles.exitIcon}
                 size={28}
                 aria-label='Exit Page Navigation'
-                onClick={() => setDisplayNav(false)}
+                onClick={() => setNavigationVisible(false)}
               />
               <nav className={styles.navContainer}>
                 <div className={styles.borderElement} />
@@ -37,7 +57,7 @@ export const Header: React.FC = () => {
               className={styles.menuIcon}
               size={28}
               aria-label='Page Navigation Menu'
-              onClick={() => setDisplayNav(true)}
+              onClick={() => setNavigationVisible(true)}
             />
           )
           }
