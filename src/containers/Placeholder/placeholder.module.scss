@@ -1,0 +1,17 @@
+@import 'styles/utils/colors';
+
+.placeholderContainer {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 5rem);
+
+    h2 {
+        font-family: 'Lato', sans-serif;
+        font-size: 2rem;
+        color: color('primary');
+    }
+}

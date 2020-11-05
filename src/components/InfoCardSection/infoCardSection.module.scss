@@ -1,0 +1,29 @@
+@import 'styles/utils/variables';
+@import 'styles/utils/breakpoints';
+
+.infoCardSectionWrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: $content-max-width;
+    padding: 4rem 3rem;
+    margin: auto;
+    
+    .infoCardSectionContainer {
+        display: flex;
+        flex-direction: row;
+
+        @include breakpoint('phablet', 'mobile') {
+            flex-direction: column;
+        }
+    }
+
+    .contentSectionWrapper {
+        padding: 1rem 0;
+
+        p {
+            @include contentParagraph;
+        }
+    }
+}

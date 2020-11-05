@@ -1,0 +1,34 @@
+$content-max-width: 1400px;
+
+@mixin contentParagraph {
+    margin-bottom: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: color('dark');
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
+
+@mixin smallSplash {
+    box-sizing: border-box;
+    min-height: 15rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: url('../../common-assets/splash-background-min.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@mixin pageHeader {
+    font-family: 'Lato', 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: color('white');
+}

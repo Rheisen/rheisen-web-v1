@@ -49,7 +49,7 @@ export const Header: React.FC = () => {
                 <Link to='/writings'><span>Writings</span><PenTool size={20} className={styles.linkIcon} /></Link>
                 <Link to='/photography'><span>Photography</span><Camera size={20} className={styles.linkIcon} /></Link>
                 <Link to='/resume'><span>Resume</span><FileText size={20} className={styles.linkIcon} /></Link>
-                <Link to='/contact'><span>Contact Me</span><Mail size={20} className={styles.linkIcon} /></Link>
+                <Link to='/contact-me'><span>Contact Me</span><Mail size={20} className={styles.linkIcon} /></Link>
               </nav>
             </React.Fragment>
           ) : (

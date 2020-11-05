@@ -1,0 +1,12 @@
+
+@import 'styles/utils/variables';
+@import 'styles/utils/colors';
+@import 'styles/utils/breakpoints';
+
+.smallSplashWrapper {
+    @include smallSplash;
+
+    h2 {
+        @include pageHeader;
+    }
+}
