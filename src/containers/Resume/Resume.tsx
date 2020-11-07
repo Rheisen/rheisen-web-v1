@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Monitor, Clipboard, BookOpen, CheckSquare } from 'react-feather';
+import { Clipboard, BookOpen, CheckSquare } from 'react-feather';
 
 import Header from 'components/Header';
 import InfoCardSection from 'components/InfoCardSection';

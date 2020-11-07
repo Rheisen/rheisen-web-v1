@@ -18,12 +18,12 @@ export const Photography: React.FC = () => {
 
       <section className={styles.galleryWrapper}>
         <div>
-          <Photo imageName='leafs' alt='Leafs' />
-          <Photo imageName='shades' alt='Shades' />
-          <Photo imageName='look' alt='Look' />
-          <Photo imageName='morning' alt='Morning' />
-          <Photo imageName='citgo' alt='Citgo' />
-          <Photo imageName='palace' alt='Palace' />
+          <Photo imageName='clocktower' alt='Porto Clocktower' />
+          <Photo imageName='red-light' alt='Kabir in Red Light' />
+          <Photo imageName='white-nike' alt='White Nikes' />
+          <Photo imageName='fog' alt='Fog' />
+          <Photo imageName='seaport-sunset' alt='Seaport Sunset' />
+          <Photo imageName='ymca' alt='YMCA' />
         </div>
         <div>
           <Photo imageName='balance' alt='Balance' />
@@ -34,12 +34,12 @@ export const Photography: React.FC = () => {
           <Photo imageName='rastro' alt='Rastro' />
         </div>
         <div>
-          <Photo imageName='clocktower' alt='Porto Clocktower' />
-          <Photo imageName='red-light' alt='Kabir in Red Light' />
-          <Photo imageName='white-nike' alt='White Nikes' />
-          <Photo imageName='fog' alt='Fog' />
-          <Photo imageName='seaport-sunset' alt='Seaport Sunset' />
-          <Photo imageName='ymca' alt='YMCA' />
+          <Photo imageName='leafs' alt='Leafs' />
+          <Photo imageName='shades' alt='Shades' />
+          <Photo imageName='look' alt='Look' />
+          <Photo imageName='morning' alt='Morning' />
+          <Photo imageName='citgo' alt='Citgo' />
+          <Photo imageName='palace' alt='Palace' />
         </div>
       </section>
 

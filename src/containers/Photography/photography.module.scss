@@ -1,5 +1,6 @@
 @import 'styles/utils/variables';
 @import 'styles/utils/colors';
+@import 'styles/utils/breakpoints';
 
 .smallSplashWrapper {
     @include smallSplash;
@@ -21,9 +22,14 @@
     padding: 4rem 3rem;
     margin: auto;
 
+    @include breakpoint('mobile', 'phablet') {
+        grid-template-columns: 1fr;
+        direction: rtl;
+    }
+
     picture {
         display: block;
-        margin-bottom: 2rem;
+        margin-bottom: 1.5rem;
         width: 100%;
 
         img {
