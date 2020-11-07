@@ -20,6 +20,14 @@
         width: 44rem;
         margin: auto;
 
+        @include breakpoint('tablet') {
+            max-width: 65%;
+        }
+
+        @include breakpoint('phablet') {
+            max-width: 80%;
+        }
+        
         @include breakpoint('phablet', 'mobile') {
             width: 100%;
             padding: 0 3rem;

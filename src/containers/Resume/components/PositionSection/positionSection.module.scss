@@ -1,0 +1,29 @@
+@import 'styles/utils/colors';
+
+.positionSectionWrapper {
+    .positionHeaderContainer {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .positionTitle {
+        padding-bottom: .2rem;
+        border-bottom: 1px dotted color('primary-tint', 'opacity', 0.8);
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: .25px;
+        color: color('primary-tint', 'opacity', 0.8);
+        cursor: pointer;
+    }
+
+    .positionTimeframe {
+        font-size: .9rem;
+        font-family: 'Roboto', sans-serif;
+        font-style: italic;
+        color: color('off-black');
+        margin-left: auto;
+    }
+}

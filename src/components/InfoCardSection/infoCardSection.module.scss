@@ -9,18 +9,35 @@
     max-width: $content-max-width;
     padding: 4rem 3rem;
     margin: auto;
+
+    @include breakpoint('tablet', 'phablet') {
+        padding: 4rem 0;
+    }
     
     .infoCardSectionContainer {
         display: flex;
         flex-direction: row;
+        width: 100%;
 
-        @include breakpoint('phablet', 'mobile') {
+        @include breakpoint('tablet', 'phablet', 'mobile') {
             flex-direction: column;
         }
     }
 
     .contentSectionWrapper {
+        box-sizing: border-box;
+        width: 100%;
         padding: 1rem 0;
+
+        @include breakpoint('tablet') {
+            width: 65%;
+            margin: auto;
+        }
+
+        @include breakpoint('phablet') {
+            width: 80%;
+            margin: auto;
+        }
 
         p {
             @include contentParagraph;

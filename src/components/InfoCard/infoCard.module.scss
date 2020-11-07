@@ -14,8 +14,8 @@
     background-color: color('off-white');
 
     @include breakpoint('tablet') {
-        width: 20rem;
-        margin-right: 3rem;
+        width: 65%;
+        margin: 0 auto 3rem auto;
     }
 
     @include breakpoint('phablet') {
@@ -31,7 +31,7 @@
     img {
         width: 100%;
         margin-bottom: .75rem;
-        border-radius: 2px;
+        border-radius: .2rem;
     }
 
     .fullLineBreak {
@@ -60,12 +60,16 @@
             color: color('primary');
         }
 
+        .linkedinIcon {
+            margin-bottom: .2rem;
+        }
+
         span, a {
             margin-left: .8rem;
             font-family: 'Lato', 'Roboto', sans-serif;
             font-weight: 400;
-            font-size: 1.1rem;
-            letter-spacing: .5px;
+            font-size: 1.2rem;
+            letter-spacing: .25px;
             color: color('dark');
         }
 
@@ -91,9 +95,9 @@
         justify-content: center;
         width: 100%;
         margin-top: 1.5rem;
-        padding: .4rem 0;
+        padding: .5rem 0;
         outline: none;
-        border-radius: 2px;
+        border-radius: .2rem;
         background-color: color('primary-accent', 'lighten', 5);
         text-decoration: none;
 
@@ -118,7 +122,7 @@
             margin-right: .3rem;
             font-family: 'Lato', 'Roboto', sans-serif;
             font-weight: 400;
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             letter-spacing: .5px;
             color: color('primary-tint', 'opacity', .7);
         }
