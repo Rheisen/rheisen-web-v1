@@ -10,6 +10,10 @@
     background-color: color('off-white');
     z-index: 200;
 
+    @include breakpoint('mobile') {
+        height: 4rem;
+    }
+
     .headerContainer {
         box-sizing: border-box;
         position: relative;
@@ -22,6 +26,10 @@
         flex-direction: row;
         align-items: center;
 
+        @include breakpoint('mobile') {
+            height: 4rem;
+        }
+
         .homeLink {
             padding: .75rem 0 .4rem 0;
             border-radius: 2px;
@@ -33,6 +41,10 @@
             color: color('primary');
             text-decoration: none;
             text-transform: uppercase;
+
+            @include breakpoint('mobile') {
+                font-size: 1.5rem;
+            }
         }
 
         .menuIcon {
@@ -139,4 +151,8 @@
 
 .pageBuffer {
     height: 5rem;
+
+    @include breakpoint('mobile') {
+        height: 4rem;
+    }
 }

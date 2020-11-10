@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { X } from 'react-feather';
 
 import styles from './photo.module.scss';
 
@@ -8,9 +9,42 @@ interface PhotoProps {
 }
 
 export const Photo: React.FC<PhotoProps> = (props) => {
+  const [enlarged, setEnlarged] = useState(false);
+
+  const handlePhotoClick = () => {
+    if (enlarged) {
+    } else {
+      setEnlarged(true);
+      document.body.classList.add('no-scroll');
+    }
+  }
+
+  const handleExitClick = () => {
+    setEnlarged(false);
+    document.body.classList.remove('no-scroll');
+  }
+
   return (
-    <picture>
-      <img src={require(`common-assets/photos/${props.imageName}.JPG`)} alt={props.alt} />
-    </picture>
+    <div className={enlarged ? styles.enlargedImageWrapper : styles.imageWrapper}>
+      {
+        enlarged ? (
+          <div className={styles.iconContainer}>
+            <X
+              className={styles.exitIcon}
+              size={28}
+              aria-label='Exit Image Display'
+              onClick={handleExitClick}
+            />
+          </div>
+        ) : null
+      }
+      <picture>
+        <img
+          src={require(`common-assets/photos/${props.imageName}.JPG`)}
+          alt={props.alt}
+          onClick={handlePhotoClick}
+        />
+      </picture>
+    </div>
   );
 }

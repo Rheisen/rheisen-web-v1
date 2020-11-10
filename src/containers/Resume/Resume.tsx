@@ -27,30 +27,82 @@ export const Resume: React.FC = () => {
           <div className={styles.resumeSectionContainer}>
             <ExperienceArticle company={'Wellframe'}>
               <PositionSection title={'Software Engineering Intern'} timeframe={'Jun 2020 - Aug 2020'}>
+                <p>
+                  During this brief internship I worked with the Decision Engine team on an ongoing project to refactor
+                  core application functionality from Ruby on Rails to Java Spring. I made modifications and
+                  additions to controllers, models, and view layers in both frameworks. Additionally I worked to create
+                  Internal Admin pages for new features using React, and modified project configuration scripts
+                  using Python.
+                </p>
               </PositionSection>
               <PositionSection title={'Software Engineering Co-op'} timeframe={'Jan 2019 - Aug 2019'}>
+                <p>
+                  Over the course of eight months I worked with numerous teams to develop production Ruby on Rails
+                  and React features, and proof-of-concept projects that were presented internally and externally
+                  by company leaders at health tech conferences and to Google. I also improved code quality in the main
+                  codebase by enforcing stricter linting, and refactored data models that allowed the data science
+                  team to gain more insight into user behavior.
+                </p>
+                <p>
+                  Notable proof-of-concept work included developing a prototype chatbot to show the viability of adding
+                  app functionality to Google Home and other IoT devices. I worked directly with the VP of Engineering
+                  and the Chief Medical Officer, and built the prototype with Firebase, DialogFlow, and React. The
+                  end product was notable for its live-transfer feature, which allowed someone chatting with the bot
+                  to request transfer to a representative, who could join the conversation from an internal messaging
+                  dashboard.
+                </p>
               </PositionSection>
             </ExperienceArticle>
 
             <ExperienceArticle company={'Khoury College @ NU'}>
               <PositionSection title={'Object Oriented Design TA'} timeframe={'Jan 2020 - May 2020'}>
+                <p>
+                  As a more experienced TA I led exam review sessions, proctored exam sessions, and helped to grade
+                  more exams. I held office hours on weekends where I had a good attendance, and graded projects with
+                  consideration and constructive feedback.
+                </p>
               </PositionSection>
               <PositionSection title={'Object Oriented Design TA'} timeframe={'Sep 2018 - Dec 2018'}>
+                <p>
+                  My first time as a TA was a great learning experience. I graded projects and gained valuable
+                  experience reading code and providing constructive feedback. I helped with exam review sessions and
+                  created materials for the students in the class to help prepare them for the exams.
+                </p>
               </PositionSection>
             </ExperienceArticle>
 
             <ExperienceArticle company={'Scout Studio'} timeframe={'Aug 2018 - Dec 2018'}>
               <PositionSection title={'Studio Software Developer'}>
+                <p>
+                  Working with Scout Studio (a Northeastern student-led design studio) taught me a lot about user
+                  experience design and the design process. We worked with a Northeastern startup to create a brand
+                  for an inclusive suncare product, which culminated in the development of a landing page and
+                  packaging designs. I developed the landing page using React and a CMS, which allowed the creators
+                  to change the text, images, etc. as needed when we handed off the project.
+                </p>
               </PositionSection>
             </ExperienceArticle>
 
             <ExperienceArticle company={'Center for Open Science'} timeframe={'May 2017 - Aug 2017'}>
               <PositionSection title={'Software Engineering Intern'}>
+                <p>
+                  At CoS I optimized API tests across the entire application and reduced the test suite run time by
+                  over 30%, which encouraged developers to run more tests locally before pushing features. I also
+                  developed a few features for the Open Science Framework platform, which was built using Django and
+                  Python. I presented at PyOhio some of the strategies used for transitioning test code from Nose
+                  to PyTest.
+                </p>
               </PositionSection>
             </ExperienceArticle>
 
             <ExperienceArticle company={'Seam'} timeframe={'Apr 2016 - Jan 2018'}>
               <PositionSection title={'Co-founder & Software Engineer'}>
+                <p>
+                  My friend Tyler Cosgrove and I became the youngest members accepted into the University of Virginia
+                  iLab program after we pitched our idea for a social shopping platform with the ability to recommend
+                  more accurate clothing sizes. For nearly a year we worked on the platform, which we developed using
+                  Meteor and MongoDB in addition to a web scraping component built with Python.
+                </p>
               </PositionSection>
             </ExperienceArticle>
           </div>
@@ -65,7 +117,7 @@ export const Resume: React.FC = () => {
                 <h4>Northeastern University</h4>
                 <span className={styles.timeframe}>Sep 2016 - Dec 2020</span>
               </header>
-              <span className={styles.degree}>Bachelor of Science Computer Science and Business Administration</span>
+              <span className={styles.degree}>BS Computer Science and Business Administration</span>
               <p>
                 <span className={styles.bold}>Honors: </span>
                 University Scholars Program, Honors Program

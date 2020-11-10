@@ -27,7 +27,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
-  background-color: #fafafa;
+  background-color: #eceef7;
 }
 
 ol, ul {
@@ -47,4 +47,12 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+#root {
+    background-color: #fafafa;
+}
+
+.no-scroll {
+    overflow: hidden;
 }

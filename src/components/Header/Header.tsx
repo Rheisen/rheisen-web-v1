@@ -46,7 +46,7 @@ export const Header: React.FC = () => {
                 <div className={styles.borderElement} />
                 <Link to='/'><span>Home</span><Home size={20} className={styles.linkIcon} /></Link>
                 <Link to='/projects'><span>Projects</span><Folder size={20} className={styles.linkIcon} /></Link>
-                <Link to='/writings'><span>Writings</span><PenTool size={20} className={styles.linkIcon} /></Link>
+                <a href='https://medium.com/@rheisen' target='_blank' rel='noopener noreferrer'><span>Writings</span><PenTool size={20} className={styles.linkIcon} /></a>
                 <Link to='/photography'><span>Photography</span><Camera size={20} className={styles.linkIcon} /></Link>
                 <Link to='/resume'><span>Resume</span><FileText size={20} className={styles.linkIcon} /></Link>
                 <Link to='/contact-me'><span>Contact Me</span><Mail size={20} className={styles.linkIcon} /></Link>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import styles from './positionSection.module.scss';
 
@@ -9,19 +9,26 @@ interface PositionSectionProps {
 }
 
 export const PositionSection: React.FC<PositionSectionProps> = (props) => {
+  const [displayChildren, setDisplayChildren] = useState(false);
+
   return(
     <section className={styles.positionSectionWrapper}>
       <header className={styles.positionHeaderContainer}>
-        <span className={styles.positionTitle}>{props.title}</span>
+        <span className={styles.positionTitle} onClick={() => setDisplayChildren(!displayChildren)}>
+          {props.title}
+        </span>
         {
           props.timeframe ? (
             <span className={styles.positionTimeframe}>{props.timeframe}</span>
           ) : null
         }
       </header>
-      <div>
-        {props.children}
-      </div>
+      { displayChildren ? (
+        <div className={styles.positionDescription}>
+          {props.children}
+        </div>
+      ) : null
+      }
     </section>
   );
 }

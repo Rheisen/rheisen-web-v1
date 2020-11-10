@@ -16,7 +16,7 @@ export const Photography: React.FC = () => {
         <h2>Photography</h2>
       </header>
 
-      <section className={styles.galleryWrapper}>
+      <section className={styles.photographyWrapper}>
         <div>
           <Photo imageName='clocktower' alt='Porto Clocktower' />
           <Photo imageName='red-light' alt='Kabir in Red Light' />
@@ -24,6 +24,7 @@ export const Photography: React.FC = () => {
           <Photo imageName='fog' alt='Fog' />
           <Photo imageName='seaport-sunset' alt='Seaport Sunset' />
           <Photo imageName='ymca' alt='YMCA' />
+          <Photo imageName='walk' alt='Walk' />
         </div>
         <div>
           <Photo imageName='balance' alt='Balance' />
@@ -31,6 +32,7 @@ export const Photography: React.FC = () => {
           <Photo imageName='angel' alt='Angel' />
           <Photo imageName='incense' alt='Incense' />
           <Photo imageName='evening' alt='Evening' />
+          <Photo imageName='bird' alt='Bird' />
           <Photo imageName='rastro' alt='Rastro' />
         </div>
         <div>
@@ -40,6 +42,7 @@ export const Photography: React.FC = () => {
           <Photo imageName='morning' alt='Morning' />
           <Photo imageName='citgo' alt='Citgo' />
           <Photo imageName='palace' alt='Palace' />
+          <Photo imageName='pepe' alt='Pepe' />
         </div>
       </section>
 

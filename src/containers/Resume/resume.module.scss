@@ -1,6 +1,7 @@
 @import 'styles/utils/variables';
 @import 'styles/utils/colors';
 @import 'styles/utils/breakpoints';
+@import 'styles/utils/transitions';
 
 .smallSplashWrapper {
     @include smallSplash;
@@ -63,6 +64,7 @@
         }
 
         .degree {
+            @include ease-in-out(.2s);
             display: inline-block;
             padding-bottom: .2rem;
             margin-bottom: 1.25rem;
@@ -73,6 +75,11 @@
             letter-spacing: .25px;
             color: color('primary-tint', 'opacity', 0.8);
             cursor: pointer;
+
+            &:hover {
+                border-bottom: 1px dotted color('primary-tint', 'opacity', 1);
+                color: color('primary-tint', 'opacity', 1);
+            }
         }
 
         .bold {
@@ -116,6 +123,7 @@
     }
 
     .resumeProjectsLink {
+        @include ease-in-out(.2s);
         padding-bottom: .2rem;
         border-bottom: 1px dotted color('primary-tint', 'opacity', 0.8);
         font-family: 'Lato', sans-serif;
@@ -124,5 +132,10 @@
         text-decoration: none;
         letter-spacing: .25px;
         color: color('primary-tint', 'opacity', 0.8);
+
+        &:hover {
+            border-bottom: 1px dotted color('primary-tint', 'opacity', 1);
+            color: color('primary-tint', 'opacity', 1);
+        }
     }
 }
