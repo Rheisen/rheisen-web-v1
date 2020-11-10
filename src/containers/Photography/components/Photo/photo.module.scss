@@ -1,6 +1,7 @@
 @import 'styles/utils/colors';
 @import 'styles/utils/variables';
 @import 'styles/utils/transitions';
+@import 'styles/utils/breakpoints';
 
 .imageWrapper {
     display: block;
@@ -26,22 +27,35 @@
     
     picture, .iconContainer {
         box-sizing: border-box;
-        display: block;
+        display: flex;
+        flex-direction: row;
         width: 100%;
         max-width: $content-max-width;
         padding: 0 3rem;
         margin: 0 auto 0 auto;
     }
 
+    picture {
+        height: calc(100vh - 5rem);
+
+        @include breakpoint('mobile', 'phablet') {
+            padding: 0;
+        }
+    }
+
     .iconContainer {
-        display: flex;
         align-items: center;
         height: 5rem;
+
+        @include breakpoint('mobile') {
+            height: 4rem;
+        }
     }
 
     img {
         display: block;
-        height: calc(100vh - 10rem);
+        max-height: calc(100vh - 10rem);
+        max-width: 100%;
         margin: auto;
     }
 
