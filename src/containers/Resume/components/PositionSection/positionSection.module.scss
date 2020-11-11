@@ -1,5 +1,6 @@
 @import 'styles/utils/colors';
 @import 'styles/utils/transitions';
+@import 'styles/utils/breakpoints';
 
 .positionSectionWrapper {
     .positionHeaderContainer {
@@ -7,6 +8,11 @@
         display: flex;
         flex-direction: row;
         align-items: center;
+
+        @include breakpoint('mobile') {
+            flex-direction: column-reverse;
+            align-items: flex-start;
+        }
     }
 
     .positionTitle {
@@ -27,11 +33,15 @@
     }
 
     .positionTimeframe {
+        margin-left: auto;
         font-size: .9rem;
         font-family: 'Roboto', sans-serif;
         font-style: italic;
         color: color('off-black');
-        margin-left: auto;
+
+        @include breakpoint('mobile') {
+            margin: 0 0 .75rem 0;
+        }
     }
 
     .positionDescription {

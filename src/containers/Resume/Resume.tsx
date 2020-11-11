@@ -117,7 +117,7 @@ export const Resume: React.FC = () => {
                 <h4>Northeastern University</h4>
                 <span className={styles.timeframe}>Sep 2016 - Dec 2020</span>
               </header>
-              <span className={styles.degree}>BS Computer Science and Business Administration</span>
+              <span className={styles.degree}>BS Computer Science & Entrepreneurship</span>
               <p>
                 <span className={styles.bold}>Honors: </span>
                 University Scholars Program, Honors Program

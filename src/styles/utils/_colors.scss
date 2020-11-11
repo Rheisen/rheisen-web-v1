@@ -8,6 +8,7 @@ $app-colors: (
     'white': #ffffff,
     'off-white': #fafafa,
     'off-black': #4A4A4A,
+    'black': #000000,
 );
 
 @function color($key, $option: opacity, $flex-val: null) {

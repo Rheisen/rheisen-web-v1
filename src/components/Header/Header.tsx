@@ -29,7 +29,7 @@ export const Header: React.FC = () => {
 
   return (
     <React.Fragment>
-      <header className={styles.headerWrapper} ref={ref}>
+      <header className={styles.headerWrapper}>
         <section className={styles.headerContainer}>
           <Link to='/' className={styles.homeLink}>
             Rheisen X Dennis
@@ -42,14 +42,15 @@ export const Header: React.FC = () => {
                 aria-label='Exit Page Navigation'
                 onClick={() => setNavigationVisible(false)}
               />
-              <nav className={styles.navContainer}>
-                <div className={styles.borderElement} />
-                <Link to='/'><span>Home</span><Home size={20} className={styles.linkIcon} /></Link>
-                <Link to='/projects'><span>Projects</span><Folder size={20} className={styles.linkIcon} /></Link>
-                <a href='https://medium.com/@rheisen' target='_blank' rel='noopener noreferrer'><span>Writings</span><PenTool size={20} className={styles.linkIcon} /></a>
-                <Link to='/photography'><span>Photography</span><Camera size={20} className={styles.linkIcon} /></Link>
-                <Link to='/resume'><span>Resume</span><FileText size={20} className={styles.linkIcon} /></Link>
-                <Link to='/contact-me'><span>Contact Me</span><Mail size={20} className={styles.linkIcon} /></Link>
+              <nav className={styles.navWrapper}>
+                <div className={styles.navContainer} ref={ref}>
+                  <Link to='/'><span>Home</span><Home size={20} className={styles.linkIcon} /></Link>
+                  <Link to='/projects'><span>Projects</span><Folder size={20} className={styles.linkIcon} /></Link>
+                  <a href='https://medium.com/@rheisen' target='_blank' rel='noopener noreferrer'><span>Writings</span><PenTool size={20} className={styles.linkIcon} /></a>
+                  <Link to='/photography'><span>Photography</span><Camera size={20} className={styles.linkIcon} /></Link>
+                  <Link to='/resume'><span>Resume</span><FileText size={20} className={styles.linkIcon} /></Link>
+                  <Link to='/contact-me'><span>Contact Me</span><Mail size={20} className={styles.linkIcon} /></Link>
+                </div>
               </nav>
             </React.Fragment>
           ) : (
