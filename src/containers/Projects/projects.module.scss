@@ -1,18 +1,14 @@
 @import 'styles/utils/variables';
-@import 'styles/utils/colors';
+@import 'styles/utils/common-styles';
 
 .smallSplashWrapper {
-    @include smallSplash;
-
-    h2 {
-        @include pageHeader;
-    }
+    @include small-splash-wrapper;
 }
 
 .placeholderWrapper {
     box-sizing: border-box;
-    padding: 4rem 3rem;
-    margin: auto;
     width: 100%;
     max-width: $content-max-width;
+    padding: 4rem 3rem;
+    margin: auto;
 }

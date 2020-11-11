@@ -158,7 +158,6 @@
                 @include breakpoint('mobile', 'phablet') {
                     text-align: right;
                     padding-top: .3rem;
-                    // margin-left: auto;
                 }
             }
 
@@ -169,7 +168,6 @@
                 opacity: .7;
 
                 @include breakpoint('mobile', 'phablet') {
-                    // margin-left: 3rem;
                     margin-right: 1.25rem;
                 }
             }

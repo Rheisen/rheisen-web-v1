@@ -1,4 +1,5 @@
 @import 'styles/utils/variables';
+@import 'styles/utils/common-styles';
 @import 'styles/utils/colors';
 @import 'styles/utils/breakpoints';
 
@@ -28,7 +29,7 @@
     .contentSectionWrapper {
         box-sizing: border-box;
         width: 100%;
-        padding: 1rem 0;
+        padding: 1rem 0 0 0;
 
         @include breakpoint('tablet') {
             width: 65%;
@@ -41,7 +42,7 @@
         }
 
         p {
-            @include contentParagraph;
+            @include content-paragraph;
         }
     }
 }

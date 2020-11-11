@@ -1,4 +1,5 @@
 @import 'styles/utils/colors';
+@import 'styles/utils/common-styles';
 @import 'styles/utils/transitions';
 @import 'styles/utils/breakpoints';
 
@@ -16,20 +17,7 @@
     }
 
     .positionTitle {
-        @include ease-in-out(.2s);
-        padding-bottom: .2rem;
-        border-bottom: 1px dotted color('primary-tint', 'opacity', 0.8);
-        font-family: 'Lato', sans-serif;
-        font-size: 1.2rem;
-        font-weight: 400;
-        letter-spacing: .25px;
-        color: color('primary-tint', 'opacity', 0.8);
-        cursor: pointer;
-
-        &:hover {
-            border-bottom: 1px dotted color('primary-tint', 'opacity', 1);
-            color: color('primary-tint', 'opacity', 1);
-        }
+        @include underlined-action-text;
     }
 
     .positionTimeframe {

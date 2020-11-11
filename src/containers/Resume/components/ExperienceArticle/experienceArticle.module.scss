@@ -11,7 +11,7 @@
         flex-direction: row;
         align-items: center;
         width: 100%;
-        margin-top: 1.25rem;
+        margin-top: .5rem;
 
         @include breakpoint('mobile') {
             flex-direction: column;

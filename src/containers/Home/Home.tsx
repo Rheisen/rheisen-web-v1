@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowDownCircle } from 'react-feather';
 
 import Header from 'components/Header';
@@ -71,8 +72,8 @@ export const Home: React.FC = () => {
           <h3>Temperance</h3>
           <p>
             Similar to wisdom, I was led to temperance after reading and considering <em>Meditations</em> by Marcus
-            Aurelius. I define temperance as maintaining self-control, and using self-control to act in accordance
-            with ones values. To me this means maintaining self-control and acting with courage and compassion.
+            Aurelius. I define temperance as maintaining self-control, and using self-control to act in accordance with
+            ones values. To me this means maintaining self-control and acting with courage and compassion.
             Tangentially, I view temperance as being the first step in achieving wisdom.
           </p>
           <h3>Courage</h3>
@@ -101,9 +102,10 @@ export const Home: React.FC = () => {
             If you've made it to the end here, I hope you feel as though you've gotten to know me better. If you
             think you have improvements for my value definitions, please feel invited to share them with me - I'd
             love to hear from you! If something in my values / value definitions resonates with you, please feel
-            welcome to make it your own. If you'd like to view the things I'm working on, the pictures I've taken,
-            or my writings, please feel encouraged to explore the rest of this site. In any case, I hope you have a
-            great day!
+            welcome to make it your own. If you'd like to view <Link to='/projects'>the things I'm working on</Link>
+            , <Link to='/photography'>the pictures I've taken</Link>, or
+            <a href='https://medium.com/@rheisen' target='_blank' rel='noopener noreferrer'> my writings</a>, please
+            feel encouraged to explore the rest of this site. In any case, I hope you have a great day!
           </p>
         </div>
       </InfoCardSection>

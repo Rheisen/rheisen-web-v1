@@ -15,7 +15,7 @@ export const PositionSection: React.FC<PositionSectionProps> = (props) => {
     <section className={styles.positionSectionWrapper}>
       <header className={styles.positionHeaderContainer}>
         <span className={styles.positionTitle} onClick={() => setDisplayChildren(!displayChildren)}>
-          {props.title}
+          <span>{props.title}</span>
         </span>
         {
           props.timeframe ? (

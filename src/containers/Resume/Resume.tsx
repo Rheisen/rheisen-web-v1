@@ -38,7 +38,7 @@ export const Resume: React.FC = () => {
               <PositionSection title={'Software Engineering Co-op'} timeframe={'Jan 2019 - Aug 2019'}>
                 <p>
                   Over the course of eight months I worked with numerous teams to develop production Ruby on Rails
-                  and React features, and proof-of-concept projects that were presented internally and externally
+                  & React features, and on proof-of-concept projects that were presented internally and externally
                   by company leaders at health tech conferences and to Google. I also improved code quality in the main
                   codebase by enforcing stricter linting, and refactored data models that allowed the data science
                   team to gain more insight into user behavior.
@@ -117,7 +117,7 @@ export const Resume: React.FC = () => {
                 <h4>Northeastern University</h4>
                 <span className={styles.timeframe}>Sep 2016 - Dec 2020</span>
               </header>
-              <span className={styles.degree}>BS Computer Science & Entrepreneurship</span>
+              <span className={styles.degree}><span>BS Computer Science & Entrepreneurship</span></span>
               <p>
                 <span className={styles.bold}>Honors: </span>
                 University Scholars Program, Honors Program
@@ -139,7 +139,7 @@ export const Resume: React.FC = () => {
                 <h4>Albemarle High School</h4>
                 <span className={styles.timeframe}>Sep 2012 - May 2016</span>
               </header>
-              <span className={styles.degree}>Advanced High School Diploma</span>
+              <span className={styles.degree}><span>Advanced High School Diploma</span></span>
               <p>
                 <span className={styles.bold}>Activities / Awards: </span>
                 Math Engineering Science Academy, Honor Roll, Robotics Team Captain, TomTom Youth Summit
@@ -171,7 +171,7 @@ export const Resume: React.FC = () => {
           </div>
 
           <div className={styles.endLinkContainer}>
-            <Link to='/projects' className={styles.resumeProjectsLink}>View Projects</Link>
+            <Link to='/projects' className={styles.resumeProjectsLink}><span>View Projects</span></Link>
           </div>
         </div>
 
